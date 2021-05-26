@@ -25,9 +25,9 @@ your projects, such as [godep](https://github.com/tools/godep). Once this is set
 Gophercloud as a dependency like so:
 
 ```bash
-go get github.com/gophercloud/gophercloud
+go get github.com/donik/gophercloud
 
-# Edit your code to import relevant packages from "github.com/gophercloud/gophercloud"
+# Edit your code to import relevant packages from "github.com/donik/gophercloud"
 
 godep save ./...
 ```
@@ -74,9 +74,9 @@ explicitly, or tell Gophercloud to use environment variables:
 
 ```go
 import (
-  "github.com/gophercloud/gophercloud"
-  "github.com/gophercloud/gophercloud/openstack"
-  "github.com/gophercloud/gophercloud/openstack/utils"
+  "github.com/donik/gophercloud"
+  "github.com/donik/gophercloud/openstack"
+  "github.com/donik/gophercloud/openstack/utils"
 )
 
 // Option 1: Pass in the values yourself
@@ -119,7 +119,7 @@ in the flavor ID (hardware specification) and image ID (operating system) we're
 interested in:
 
 ```go
-import "github.com/gophercloud/gophercloud/openstack/compute/v2/servers"
+import "github.com/donik/gophercloud/openstack/compute/v2/servers"
 
 server, err := servers.Create(client, servers.CreateOpts{
   Name:      "My new server!",
